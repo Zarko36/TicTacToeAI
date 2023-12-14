@@ -188,4 +188,4 @@ def game_loop():
                 print("It's a tie!")
                 break
 
-#game_loop() # Uncomment this line to play the game, but it must be commented again when you are submitting the code
+#game_loop() # Uncomment this line to play the game
