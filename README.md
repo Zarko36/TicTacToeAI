@@ -23,4 +23,12 @@ In the minimax function, a and b represent the best scores that the maximizing a
 ## How to Run the Game
 To play the game, simply run the tic_tac_toe.py script. The game will randomly decide who goes first. If you're playing against the AI, it will make its move instantly. If it's your turn, you'll be asked to enter the row and column numbers of your move.
 
-Enjoy the game!
+## Future Improvements
+
+One potential area for future improvement is the addition of adjustable difficulty levels for the AI player. Currently, the AI uses the Minimax algorithm to explore all possible moves to a certain depth, simulating alternating turns between the AI and the human player. This ensures that the AI plays optimally, making it a challenging opponent.
+
+However, not all players may want to play against an optimal AI. Some may prefer an easier game, while others may want to gradually increase the difficulty as they get better at the game. To accommodate this, we could add a difficulty setting that adjusts how deep the AI searches through the game tree.
+
+For example, on an easy difficulty setting, the AI could only look one move ahead. On a medium difficulty setting, it could look two moves ahead, and on a hard difficulty setting, it could look three moves ahead. This would make the AI's play less optimal on lower difficulty settings, giving the human player a better chance of winning.
+
+Implementing this feature would involve modifying the `minimax` method in the `Player_2` class to take an additional parameter representing the maximum depth to search. The method would then need to be updated to stop recursing once it reaches this maximum depth.
